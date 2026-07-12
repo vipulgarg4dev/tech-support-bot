@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-core
+langchain-groq
+langchain-qdrant
+qdrant-client
+fastembed
+langgraph
+sentence-transformers
+protobuf==3.20.3
