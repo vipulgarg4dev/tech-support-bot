@@ -59,7 +59,8 @@ def rag_bot_node(state: AgentState):
         collection_name="tech_docs",
         embedding=dense_embeddings,
         sparse_embedding=sparse_embeddings,
-        retrieval_mode=RetrievalMode.HYBRID
+        retrieval_mode=RetrievalMode.HYBRID,
+        sparse_vector_name="sparse-text"
     )
     
     # Retrieve documents matched by Hybrid Querying
