@@ -38,7 +38,8 @@ class AgentState(TypedDict):
 # Triage Node: Screens queries for engineering frustration or explicit handoff keywords
 def triage_node(state: AgentState):
     query = state["current_query"].lower()
-    human_keywords = ["human", "agent", "representative", "speak to someone", "person", "escalate"]
+    #human_keywords = ["human", "agent", "representative", "speak to someone", "person", "escalate"]
+    human_keywords = ["human", "representative", "speak to someone", "person", "escalate"]
     
     if any(keyword in query for keyword in human_keywords):
         return {"needs_human": True}
